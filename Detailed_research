@@ -1,0 +1,73 @@
+# BioLynk
+## Real-Time Emergency Blood Donor Matching & Response Network
+
+> BioLynk connects hospitals with nearby compatible and available blood donors during emergencies through location-aware matching and automated notifications.
+
+---
+
+## 1. Problem & Research Evidence
+
+India has an established blood-transfusion system, but research identifies challenges related to **blood demand–supply balance, geographic accessibility, and emergency coordination**.
+
+### Blood Demand & Supply
+
+A national study covering **251 healthcare facilities** estimated India's clinical blood demand at approximately **14.6 million units**, with supply meeting around **93% of estimated demand**.
+
+**Source:** PLOS ONE — *The clinical demand and supply of blood in India: A National level estimation study*  
+https://doi.org/10.1371/journal.pone.0265951
+
+### Geographic Accessibility
+
+A geospatial study across eight northern Indian states found that only **61.45%** of the studied population was within 60 minutes of a blood bank.
+
+**Source:** BMJ Global Health — *Defining blood deserts and access to blood products for 660 million people*  
+https://doi.org/10.1136/bmjgh-2024-015637
+
+### Emergency Blood-Access Delays
+
+A frontline healthcare study in Bihar reported **1–6 hour delays** in obtaining blood, with factors including availability, blood-bank proximity, and coordination.
+
+**Source:** *The global surgery blood drought: frontline provider data on barriers and solutions in Bihar, India*  
+https://pubmed.ncbi.nlm.nih.gov/31018826/
+
+### Recent Pan-India Evidence
+
+A 2026 modelling study using **2024 e-RaktKosh data** analysed access across **735 districts and 5,679 blood-banking facilities**, identifying substantial geographic variation in accessibility.
+
+**Source:** *Timely geographic access to blood banking facilities: A pan-India modelling study*  
+https://doi.org/10.1111/tme.70075
+
+---
+
+## 2. The Gap BioLynk Addresses
+
+Existing systems such as **e-RaktKosh** provide blood-bank and blood-availability infrastructure.
+
+BioLynk focuses on the complementary **last-mile donor coordination problem**:
+
+> **When an emergency requirement needs additional donor support, how can a hospital rapidly identify and communicate with nearby compatible and available individual donors?**
+
+BioLynk therefore does **not** aim to replace blood banks or existing blood-management systems.
+
+---
+
+## 3. Proposed Solution
+
+```text
+Hospital Emergency Request
+            ↓
+Blood Compatibility Filter
+            ↓
+Availability Filter
+            ↓
+Location-Based Matching
+            ↓
+Emergency Notification
+            ↓
+Donor Response
+            ↓
+Requirement Fulfilled?
+        ↙       ↘
+      YES        NO
+       ↓          ↓
+     CLOSE    Expand Radius
